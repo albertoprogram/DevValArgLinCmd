@@ -8,15 +8,19 @@ namespace DevValArgLinCmd
 {
     class Program
     {
-        public static int Main(string[] args)
+        public static void Main(string[] args)
         {
             if (args[0] == "Falla")
             {
-                return 1;
+                Console.WriteLine("El argumento ingresado es: {0}", args[0].ToString());
+
+                Console.ReadKey();
             }
             else
             {
-                return 0;
+                Console.WriteLine("El argumento ingresado es: {0}", args[0].ToString());
+
+                Console.ReadKey();
             }
         }
     }
